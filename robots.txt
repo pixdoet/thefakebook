@@ -1,0 +1,16 @@
+# robots.txt for thefuckbook
+# remember! this is not thefacebook, and i hate thefacebook with a passion
+
+User-agent: *
+Disallow: /admin/*
+
+User-agent: Googlebot
+Disallow: /admin*
+Disallow: /profile.php*
+Disallow: /edit_profile.php*
+
+User-agent: ia_archiver
+Disallow: /admin*
+
+# Sitemap: NONE!!!!
+# robots.txt of thefuckbook © 2021 thefuckbook
