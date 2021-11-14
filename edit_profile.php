@@ -2,7 +2,7 @@
 // edit_profile.php by ian 
 // this contains the least amount of php code
 session_start();
-$conn = new mysqli("localhost","root","","fuckbook");
+include("includes/config.inc.php");
 function checkstatusid($statusid){
   if ($statusid == 1){
     return "Student (Full-time)";

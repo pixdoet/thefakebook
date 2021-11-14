@@ -1,14 +1,16 @@
 <?php
 session_start();
 // re-write php code on may 1st, 2021 by ian
-$conn = new mysqli("localhost","root","","fuckbook"); // fixed by nycrie
+include("includes/config.inc.php");
 $login_status = 0; //set this for debug purposes. Remove in final code!
 $login_status_text = ""; //the real login status
-if (isset($_GET['fromregister'])){
+if (isset($_GET['fromregister']))
+{
   $login_status_text = "Your account has been created! Now you can log in";
 }
 // do this to prevent nasty errors!
-if(isset($_POST['submit'])){
+if(isset($_POST['submit']))
+{
   // do a check for empty fields
   // the check breaks login_status somehow. Commenting it
   //if(isset($_POST['email'])){

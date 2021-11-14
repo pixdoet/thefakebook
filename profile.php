@@ -1,12 +1,9 @@
 <?php
 session_start();
-//check if it's the user
-if (isset($_SESSION['username'])){
-  
-}
+
 // profile.php
 // php first edited by ian
-include('conn.php'); // fixed by nycrie
+include('includes/config.inc.php'); // fixed by nycrie
 
 // we do function for checking the status id
 function checkstatusid($statusid){

@@ -25,8 +25,7 @@ $checkemailres = $conn->prepare("SELECT * FROM fuckbook_users WHERE email = ?");
 $checkemailres->bind_param("s", $post_email); 
 $checkemailres->execute();
 $checkemailres2 = $checkemailres->get_result();
-$checkemailres3 = $checkemailres2->num_rows;
-if ($checkemailres3 == 0){
+if ($checkemailres2){
 	// now we know that email is not used
   // insert values
   $regsql = $conn->prepare("INSERT INTO fuckbook_users(username,password,email,status)VALUES(?,?,?,?)");
@@ -39,7 +38,7 @@ if ($checkemailres3 == 0){
   }
   else {
     // FUCK - nycrite
-    echo "Your account has not been created. Screw it";
+    echo "Your account has not been created.";
   }
   // we get the id of the user
   // might be used for future purposes!
@@ -53,7 +52,7 @@ if ($checkemailres3 == 0){
     }
   }
   // we also create a new record for fuckbook_profiles
-  $profilesql = $conn->prepare("INSERT INTO fuckbook_profiles(id,email)VALUES(?,?)");
+  $profilesql = $conn->prepare("INSERT INTO fuckbook_profiles(id,email) VALUES (?,?)");
   $profilesql->bind_param("is",$getid,$post_email);
   $profilesql->execute();
 }
