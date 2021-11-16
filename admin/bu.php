@@ -36,7 +36,7 @@ session_start();
 <tbody><tr><td class="white" bgcolor="#3B5998">Admin Panel</td></tr></tbody></table><center><p class="title">[ Admin Panel ]<br>&nbsp;<table cellspacing="0" cellpadding="0" border="0" width="95%"><tbody><tr><td class="larger">
 
 <?php
-include('conn.php');
+include('../includes/config.inc.php');
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

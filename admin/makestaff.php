@@ -1,15 +1,6 @@
 <?php
 
-$servername = "localhost:420";
-$username = "root";
-$password = "";
-$db = "fuckbook";
-
-$conn = new mysqli($servername, $username, $password, $db);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include("../includes/config.inc.php");
 
 $id = $_GET['id']; // get id through query string
 

@@ -6,7 +6,7 @@ if (isset($_SESSION['username'])){
 }
 // profile.php
 // php first edited by ian
-$conn = new mysqli("localhost","root","","fuckbook"); // fixed by nycrie
+include("includes/config.inc.php");
 
 // we do function for checking the status id
 function checkstatusid($statusid){

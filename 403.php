@@ -1,26 +1,11 @@
 <html><head><title>Thefuckbook | Welcome to Thefuckbook!</title>
-<link rel="stylesheet" href="/style.css">
-<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico">
 
 </head><body><center>
 <table class="bordertable" width="700" cellspacing="0" cellpadding="0" border="0">
   <tbody><tr><td>
-      <table class="bottomborder" width="100%" cellspacing="0" cellpadding="0" border="0">
-      <tbody><tr><td width="350" bgcolor="#3B5998">
-          <img src="/images/logo-right.png"></td>
-          <td><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-          <tbody><tr><td><a href="index.php"><img src="/images/logo-left.png" border="0"></a></td>
-          <td width="100%" bgcolor="#3B5998">&nbsp;</td></tr></tbody></table></td></tr>
-          <tr><td><table width="100%" cellspacing="0" cellpadding="4" border="0"><tbody><tr height="21">
-          <!--<td bgcolor=#3B5998 width=10>&nbsp;</td>-->
-                    <td valign="bottom" bgcolor="#3B5998">&nbsp;<a class="menu" href="/login.php">login</a></td>
-          <td valign="bottom" bgcolor="#3B5998">&nbsp;<a class="menu" href="/register.php">register</a></td>
-          <td valign="bottom" bgcolor="#3B5998">&nbsp;<a class="menu" href="/about.php">about</a></td>
-                    <td width="100%" bgcolor="#3B5998">&nbsp;</td>
-          </tr></tbody></table></td>
-          </tr></tbody></table>
-      </td></tr></tbody></table>  </td></tr>
+      <?php include("header.php");?></td></tr>
   <tr><td><table width="100%" cellspacing="0" cellpadding="2" border="0">
       <tbody><tr><td valign="top">
       <table width="105" cellspacing="0" cellpadding="0" border="0">

@@ -1,9 +1,12 @@
 <?php
 // edit_basic_info.php by ian
 // this page should have nothing, and should show nothing
-include ('config.inc.php');
 
-if (isset($_SESSION['loggedin']))
+// start session (im an idiot forgot bout this)
+session_start();
+include ('includes/config.inc.php');
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
 {
     if (isset($_GET['id']) && $_GET['id'] == $_SESSION['userid'])
     {
@@ -28,11 +31,13 @@ if (isset($_SESSION['loggedin']))
     }
     else
     {
-        header("Location: 403.php");
+        echo "wrong session id";
+        //header("Location: 403.php");
     }
 }
 else
 {
-    header("Location: 403.php");
+    echo "not logged in!";
+    //header("Location: 403.php");
 }
 ?>

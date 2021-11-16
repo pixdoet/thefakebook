@@ -4,6 +4,8 @@
 session_start();
 // fixed mysql login -ian
 include("includes/config.inc.php");
+$err = "";
+
 if (isset($_POST["submit"])) {
 $post_name = $_POST['name'];
 $post_email = $_POST['email'];
@@ -20,12 +22,14 @@ $sha_password = password_hash($post_password, PASSWORD_DEFAULT);
 // we store ip as long
 $long_ip = ip2long($post_ip);
 
+
 // check if email is used
 $checkemailres = $conn->prepare("SELECT * FROM fuckbook_users WHERE email = ?");
 $checkemailres->bind_param("s", $post_email); 
 $checkemailres->execute();
 $checkemailres2 = $checkemailres->get_result();
-if ($checkemailres2){
+$checkemailres3 = $checkemailres2->num_rows;
+if ($checkemailres3 == 0){
 	// now we know that email is not used
   // insert values
   $regsql = $conn->prepare("INSERT INTO fuckbook_users(username,password,email,status)VALUES(?,?,?,?)");
@@ -59,7 +63,7 @@ if ($checkemailres2){
 else{
   // oh shit someone stole your email
   // FUCK - nycrite
-  echo "This email has been used. Try another email!";
+  $err = "This email has been banned or used";
 }
 }
 ?>
@@ -127,6 +131,7 @@ have registered.
   <tbody><tr><td><input type="checkbox" required name="terms" value="1"></td><td>
   I have read and understood the <a href="terms.php">Terms of Use</a>,
   and I<br>agree to them.</td></tr>
+<tr><td><?php echo $err; ?></td></tr>
   <tr><td valign="top" align="right">*</td><td>You can choose any password. <font color="red">It 
   should not be your password that you use frequently in other sites.</font></td></tr>
   </tbody></table></td></tr></tbody></table>
