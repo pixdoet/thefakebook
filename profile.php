@@ -134,7 +134,7 @@ if(isset($_GET['id'])){
       $get_mobile = "N/A";
     }
     else{
-      $get_mobile = $row['mobile'];
+      $get_mobile = strval($row['mobile']);
     }
   }
   
