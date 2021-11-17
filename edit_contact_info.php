@@ -16,7 +16,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
         $mobile = $_POST['mobile'];
 
         $bas_ins_sql = $conn->prepare("UPDATE fuckbook_profiles SET screenname = ?, mobile = ? WHERE id = ?");
-        $bas_ins_sql->bind_param("ssi", $screenname, $mobile, $id);
+        $bas_ins_sql->bind_param("sss", $screenname, $mobile, $id);
         $res = $bas_ins_sql->execute();
 
         if($res)

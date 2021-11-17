@@ -17,7 +17,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
         $highschool = $_POST['highschool'];
 
         $bas_sql = $conn->prepare("UPDATE fuckbook_profiles SET school = ?, sex = ?, birthday = ?, hometown = ?, highschool = ? WHERE id = ?");
-        $bas_sql->bind_param("sisssi",$school,$sex,$birthday,$hometown,$highschool);
+        $bas_sql->bind_param("sisssi",$school,$sex,$birthday,$hometown,$highschool,$_GET['id']);
         $bas_sql->execute();
 
         if($bas_sql)
@@ -37,7 +37,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
 }
 else
 {
-    echo "not logged in!";
-    //header("Location: 403.php");
+    // echo "not logged in!";
+    header("Location: 403.php");
 }
 ?>
