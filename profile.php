@@ -36,7 +36,7 @@ function checkstatusid($statusid){
 // we do function to check SEX
 function checksex($sex){
   if ($sex == 0){
-    return "Not set";
+    return "N/A";
   }
   if ($sex == 1){
     return "Male";
