@@ -16,7 +16,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
         $hometown = $_POST['hometown'];
         $highschool = $_POST['highschool'];
 
-        $bas_sql = $conn->prepare("UPDATE fuckbook_profiles SET school = ?, sex = ?, birthday = ?, hometown = ?, highschool = ? WHERE id = ?");
+        $bas_sql = $conn->prepare("UPDATE fuckbook_profiles SET school = ?, sex = ?, hometown = ?, highschool = ? WHERE id = ?");
         $bas_sql->bind_param("sisssi",$school,$sex,$birthday,$hometown,$highschool,$_GET['id']);
         $bas_sql->execute();
 

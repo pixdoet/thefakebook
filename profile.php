@@ -130,13 +130,15 @@ if(isset($_GET['id'])){
         $get_screenname = $row['screenname'];
       }
     }
-    if (is_null($row['mobile'])){
+    //if (is_null($row['mobile'])){
       $get_mobile = "N/A";
-    }
+    /* }
     else{
       $get_mobile = $row['mobile'];
     }
+    */
   }
+  
   
 }
 else{
