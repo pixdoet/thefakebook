@@ -294,14 +294,14 @@ if (!isset($id)) {
                                                           </tr>
                                                           <tr>
                                                           </tr>
-                                                          <!--
+                                                          
                                                             <tr>
                                                             <td>
                                                               Birthday:
                                                             </td>
-                                                            <td><input type="date" name="date" value="<?php // echo htmlspecialchars($get_bday); ?>"></td>
+                                                            <td><input type="date" name="date" value="<?php echo htmlspecialchars($get_bday); ?>"></td>
                                                           </tr>
-                                                        -->
+                                                        
                                                           <tr>
                                                           </tr>
                                                           <tr>
