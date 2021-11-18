@@ -437,7 +437,7 @@ else{
                   Mobile:
                 </td>
                 <td>
-                  <?php echo htmlspecialchars($get_mobile);?>
+                  <?php echo $get_mobile;?>
                 </td>
               <tr>
               <tr>
