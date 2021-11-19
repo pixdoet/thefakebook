@@ -91,6 +91,31 @@ if (!isset($id)) {
           } else {
             $get_highschool = $row['highschool'];
           }
+          if (is_null($row['looking_for'])) {
+            $get_looking_for = "N/A";
+          } else {
+            $get_looking_for = $row['looking_for'];
+          }
+          if (is_null($row['interested_in'])) {
+            $get_interested_in = "N/A";
+          } else {
+            $get_interested_in = $row['interested_in'];
+          }
+          if (is_null($row['relationship_status'])) {
+            $get_relationship_status = "N/A";
+          } else {
+            $get_relationship_status = $row['relationship_status'];
+          }
+          if (is_null($row['political_views'])) {
+            $get_political_views = "N/A";
+          } else {
+            $get_political_views = $row['political_views'];
+          }
+          if (is_null($row['interests'])) {
+            $get_interests = "N/A";
+          } else {
+            $get_interests = $row['interests'];
+          }
         }
       }
       // get contact info

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.6
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 14, 2021 at 06:08 AM
--- Server version: 10.6.4-MariaDB
--- PHP Version: 7.3.8
+-- Generation Time: Nov 19, 2021 at 07:04 AM
+-- Server version: 10.3.31-MariaDB-0+deb10u1
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -36,8 +35,14 @@ CREATE TABLE `fuckbook_profiles` (
   `highschool` varchar(255) DEFAULT NULL,
   `screenname` varchar(255) DEFAULT NULL,
   `mobile` int(8) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `id` int(8) NOT NULL
+  `looking_for` text DEFAULT NULL,
+  `interested_in` text DEFAULT NULL,
+  `relationship_status` int(2) DEFAULT NULL,
+  `political_views` text DEFAULT NULL,
+  `interests` text DEFAULT NULL,
+  `music` text DEFAULT NULL,
+  `id` int(8) NOT NULL,
+  `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -47,22 +52,18 @@ CREATE TABLE `fuckbook_profiles` (
 --
 
 CREATE TABLE `fuckbook_users` (
-  `username` varchar(255) NOT NULL,
+  `username` varchar(64) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `status` int(8) NOT NULL,
-  `id` int(8) NOT NULL
+  `email` varchar(64) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `id` int(8) NOT NULL,
+  `date` datetime NOT NULL DEFAULT current_timestamp(),
+  `rank` int(8) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `fuckbook_profiles`
---
-ALTER TABLE `fuckbook_profiles`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `fuckbook_users`
@@ -77,6 +78,10 @@ ALTER TABLE `fuckbook_users`
 --
 -- AUTO_INCREMENT for table `fuckbook_users`
 --
+ALTER TABLE `fuckbook_users`
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
