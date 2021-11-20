@@ -74,7 +74,7 @@ body {
   <a href="terms.php">terms</a>&nbsp;&nbsp;
   <a href="policy.php">privacy</a>
   <br>a Fuck production
-  <br>Thefuckbook © 2021
+  <br>Thefakebook © 2021
   </p></center><br>
   </td></tr></tbody></table><br>
 </center></body></html>

@@ -1,4 +1,4 @@
-# robots.txt for thefuckbook
+# robots.txt for thefuckbook/thefakebook
 # remember! this is not thefacebook, and i hate thefacebook with a passion
 
 User-agent: *
@@ -13,4 +13,4 @@ User-agent: ia_archiver
 Disallow: /admin*
 
 # Sitemap: NONE!!!!
-# robots.txt of thefuckbook © 2021 thefuckbook
+# robots.txt of thefakebook © 2021 thefakebook

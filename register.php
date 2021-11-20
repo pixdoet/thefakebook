@@ -67,7 +67,7 @@ else{
 }
 }
 ?>
-<html><head><title>Thefuckbook | Registration</title>
+<html><head><title>Thefakebook | Registration</title>
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="favicon.ico">
 
@@ -102,7 +102,7 @@ else{
 <tbody><tr><td class="white" bgcolor="#3B5998">Registration</td></tr></tbody></table><center><table cellspacing="0" cellpadding="0" border="0" width="95%"><tbody><tr><td>
 <center><table cellspacing="0" cellpadding="0" border="0" width="90%"><tbody><tr><td>
 &nbsp;<br>
-To register for thefuckbook.com, just fill in the four fields below.  You will
+To register for Thefakebook.ml, just fill in the four fields below.  You will
 have a chance to enter additional information and submit a picture once you
 have registered.
 <p>
