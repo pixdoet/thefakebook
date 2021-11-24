@@ -10,7 +10,7 @@ if ($id != $gid)
 
 $img = true;
 $continue = true;
-if(!isset($_FILES['picture']) || file_exists($_FILES['picture']))
+if(isset($_FILES['picture']) || file_exists($_FILES['picture']))
 {
     $file = $_FILES['picture'];
     $filename = $file . $pfp_dir;
