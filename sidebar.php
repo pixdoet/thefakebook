@@ -34,7 +34,7 @@ else
     <tbody>
         <tr>
             <td style="text-align:right">
-                <p><a href="profile.php?id=<?php echo $_SESSION['userid'];?>">My Profile</a><a href="edit_profile.php?id=<?php echo $_SESSION['id'];?>"> [ Edit ] </a></p>
+                <p><a href="profile.php?id=<?php echo $_SESSION['userid'];?>">My Profile</a><a href="edit_profile.php?id=<?php echo $_SESSION['userid'];?>"> [ Edit ] </a></p>
                 <p><a href=".#">My friends</a></p>
                 <p><a href=".#">My groups</a></p>
                 <p><a href=".#">My parties</a></p>
