@@ -13,8 +13,8 @@ if (isset($_GET['fromregister'])) {
 if (isset($_POST['submit'])) {
   // do a check for empty fields
   // the check breaks login_status somehow. Commenting it
-  //if(isset($_POST['email'])){
-  //if (isset($_POST['password'])){
+  // if(isset($_POST['email'])){
+  // if (isset($_POST['password'])){
   // get the vars
   $post_email = $_POST['email'];
   $password = $_POST['password'];
@@ -79,23 +79,7 @@ if (isset($_POST['submit'])) {
                       <tbody>
                         <tr>
                           <td>
-                            <table class="dashedtable" cellspacing="0" cellpadding="2" width="100%">
-                              <tbody>
-                                <tr>
-                                  <td align="right">
-                                    <center>
-                                      &nbsp;<br><a href="index.php">[ main ]</a>
-                                      <p><a href="login.php">[ login ]</a>
-                                      </p>
-                                      <p><a href="register.php">[ register ]</a>
-                                      </p>
-                                      <p>
-                                      </p>
-                                    </center>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <?php include("sidebar.php");?>
 
                           </td>
                         </tr>

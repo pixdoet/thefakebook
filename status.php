@@ -7,8 +7,9 @@ if(isset($_GET['id'])){
     $idDb = $conn->prepare("SELECT * FROM fuckbook_status WHERE id = ?");
     $idDb->bind_param("i",$_GET['id']);
     $idDb->execute();
+    echo ("c");
 }
 else{
-    
+ echo ("d");   
 }
 ?>
