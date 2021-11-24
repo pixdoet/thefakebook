@@ -41,7 +41,7 @@ if (!isset($_SESSION['loggedin']) && !isset($_SESSION['userid'])) {
                     <p><a href=".#">My parties</a></p>
                     <p><a href=".#">My messages</a></p>
                     <p><a href="edit_profile.php?id=<?php echo $_SESSION['userid']; ?>">My account</a></p>
-                    <p><a href=".#">My privacy</a></p>
+                    <p><a href="policy.php">My privacy</a></p>
                 </td>
             </tr>
         </tbody>
