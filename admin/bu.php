@@ -4,7 +4,7 @@ session_start();
 <html>
 
 <head>
-  <title>Thefuckbook | Welcome to Thefuckbook!</title>
+  <title>Thefakebook | Welcome to Thefakebook!</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="shortcut icon" href="../favicon.ico">
 

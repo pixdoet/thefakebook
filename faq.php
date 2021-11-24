@@ -1,8 +1,7 @@
-<!-- saved from url=(0077)https://web.archive.org/web/20050401043108/http://www.thefacebook.com/faq.php -->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Thefuckbook | Frequently Asked Questions</title>
+        <title>Thefakebook | Frequently Asked Questions</title>
         <link rel="stylesheet" href="/style.css">
         <link rel="shortcut icon" href="/favicon.ico">
     </head>
@@ -107,7 +106,7 @@
                                                                                                                 <table cellspacing="0" cellpadding="2" border="0" width="100%">
                                                                                                                     <tbody>
                                                                                                                         <tr>
-                                                                                                                            <td class="white" bgcolor="#3B5998">What is TheFUCKbook?</td>
+                                                                                                                            <td class="white" bgcolor="#3B5998">What is Thefakebook?</td>
                                                                                                                         </tr>
                                                                                                                     </tbody>
                                                                                                                 </table>&nbsp;<br>
@@ -115,7 +114,7 @@
                                                                                                                     <table cellspacing="0" cellpadding="2" border="0" width="95%">
                                                                                                                         <tbody>
                                                                                                                             <tr>
-                                                                                                                                <td>Thefrickbook is an online directory that connects people through social
+                                                                                                                                <td>Thefakebook is an online directory that connects people through social
                                                                                                                                     networks at colleges and universities.
                                                                                                                                     <br>&nbsp;
                                                                                                                                 </td>
@@ -172,7 +171,7 @@
                                                                                                                             <table cellspacing="0" cellpadding="2" border="0" width="95%">
                                                                                                                                 <tbody>
                                                                                                                                     <tr>
-                                                                                                                                        <td>well technically thefuckbook isn't available yet to the public 
+                                                                                                                                        <td>well technically Thefakebook isn't available yet to the public 
                                                                                                                                             but as far as i can tell it started on Thursday, April 29th,
                                                                                                                                             2021. 
                                                                                                                                             <br>&nbsp;

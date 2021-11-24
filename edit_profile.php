@@ -147,7 +147,7 @@ if (!isset($id)) {
 <html>
 
 <head>
-  <title>Thefuckbook | Welcome to Thefuckbook!</title>
+  <title>Thefakebook | Welcome to Thefakebook!</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
 
@@ -319,14 +319,14 @@ if (!isset($id)) {
                                                           </tr>
                                                           <tr>
                                                           </tr>
-                                                          
-                                                            <tr>
+
+                                                          <tr>
                                                             <td>
                                                               Birthday:
                                                             </td>
                                                             <td><input type="date" name="date" value="<?php echo htmlspecialchars($get_bday); ?>"></td>
                                                           </tr>
-                                                        
+
                                                           <tr>
                                                           </tr>
                                                           <tr>
@@ -489,7 +489,7 @@ if (!isset($id)) {
                 <a href="terms.php">terms</a>&nbsp;&nbsp;
                 <a href="policy.php">privacy</a>
                 <br>a Fuck production
-                <br>Thefuckbook © 2005
+                <br>Thefakebook © 2005
               </p>
             </center><br>
           </td>

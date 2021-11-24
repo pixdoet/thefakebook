@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Thefuckbook | Welcome to Thefuckbook!</title>
+  <title>Thefakebook | Welcome to Thefakebook!</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
 
@@ -93,7 +93,7 @@
                 <a href="/terms.php">terms</a>&nbsp;&nbsp;
                 <a href="/policy.php">privacy</a>
                 <br>a Fuck production
-                <br>Thefuckbook © 2005
+                <br>Thefakebook © 2005
               </p>
             </center><br>
           </td>
