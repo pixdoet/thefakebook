@@ -3,7 +3,7 @@ session_start();
 include("includes/config.inc.php");
 ?>
 <?php
-if(!isset($_SESSION['loggedin']) && isset($_SESSION['userid']))
+if(!isset($_SESSION['loggedin']) && !isset($_SESSION['userid']))
 {
 ?>
 <table class="dashedtable" width="100%" cellspacing="0" cellpadding="2">
