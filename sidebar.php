@@ -33,7 +33,7 @@ else
 <table class="dashedtable" width="100%" cellspacing="0" cellpadding="2">
     <tbody>
         <tr>
-            <td style="text-align:right">
+            <td style="text-align:center">
                 <p><a href="profile.php?id=<?php echo $_SESSION['userid'];?>">My Profile</a><a href="edit_profile.php?id=<?php echo $_SESSION['userid'];?>"> [ Edit ] </a></p>
                 <p><a href=".#">My friends</a></p>
                 <p><a href=".#">My groups</a></p>
