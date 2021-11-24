@@ -1,44 +1,50 @@
 <?php
-// user checking
 session_start();
 
-$id = $_GET['id'];
-if (isset($_SESSION['userid'])){
-    if ($_SESSION['userid'] !== $id){
-        //for now, we'll show a little debug message
-        //later on when error messages are added to edit_profile we'll do that
-        echo "Error! User ID does not match request's GET id";
-    }
-    else{
-        $currentid = $_SESSION['userid'];
-        //now for uploading and <shit class="shit"></shit>
-        //yeah
-        if(isset($_FILE['image'])){
-            $img = $_FILE['image'];
-            //check file type
-            $allowedfiles = array('image/jpeg','image/png');
-            if(in_array($img['type'],$allowedfiles)){
-                $dir = "./images/profiles";
-                $changename = $currentid . "." . $img['type'];
+$id = $_SESSION['userid'];
+$gid = $_GET['id'];
+if ($id != $gid)
+{
+    echo "GET id does not match Session id!";
+}
 
-                $go = $dir . $changename;
-                // we are funny!
-                if(move_uploaded_file($dir['tmp_name'],$go)){
-                    echo "Profile picture was uploaded";
-                    print_r($img);
-                }
-                
-            }
-            else{
-                echo "File not supported! Must be in .jpg, .jpeg or .png format";
-            }
+$img = true;
+$continue = true;
+if(!isset($_FILES['picture']) || file_exists($_FILES['picture']))
+{
+    $file = $_FILES['picture'];
+    $filename = $file . $pfp_dir;
+    
+    // check filetype
+    $filetype = strtolower(pathinfo($filename,PATHINFO_EXTENSION));
+    if(isset($_POST['submit']))
+    {
+        $check = getimagesize($file['tmp_name']);
+        if($check)
+        {
+            echo "File is image";
+            $img = true;
         }
-        else{
-            echo "You need to provide an image!";
+        else
+        {
+            echo "File is not image";
+            $img = false;
         }
+    }
+    else
+    {
+        $img = false;
     }
 }
-else{
-    header("Location: 404.php");
+if($img)
+{
+    if(move_uploaded_file($file['tmp_name'], $filename))
+    {
+        echo htmlspecialchars("File {$filename} has been uploaded");
+    }
+    else
+    {
+        echo "File not uploaded";
+    }
 }
 ?>
