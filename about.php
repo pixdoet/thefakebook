@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<html><head><title>Thefuckbook | Welcome to Thefuckbook!</title>
+<html><head><title>Thefakebook | Welcome to Thefakebook!</title>
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="favicon.ico">
 
@@ -40,7 +40,7 @@ session_start();
 <table class="bordertable" cellspacing="0" cellpadding="0" border="1" width="100%"><tbody><tr><td>
 
 <table cellspacing="0" cellpadding="2" border="0" width="100%">
-<tbody><tr><td class="white" bgcolor="#3B5998">The Project</td></tr></tbody></table><center><br>&nbsp;<table cellspacing="0" cellpadding="0" border="0" width="95%"><tbody><tr><td class="larger">Thefacebook was the original Facebook before it's rebranding to Facebook. I wanted to create a place that replicates the old times before modern Facebook. I took my two cool guys, goom and maybeimawok to help me create Thefuckbook.<br><br>Thefuckbook is almost like an exact replica of Thefacebook, with everything included. It brings the old internet to the modern world, also we IP ban stupid people so you won't see any STUPID pricks here :troll:<br><br></center></td></tr></tbody></table>  </p></center></td></tr></tbody>
+<tbody><tr><td class="white" bgcolor="#3B5998">The Project</td></tr></tbody></table><center><br>&nbsp;<table cellspacing="0" cellpadding="0" border="0" width="95%"><tbody><tr><td class="larger">Thefacebook was the original Facebook before it's rebranding to Facebook. I wanted to create a place that replicates the old times before modern Facebook. I took my two cool guys, goom and maybeimawok to help me create Thefakebook.<br><br>Thefakebook is almost like an exact replica of Thefacebook, with everything included. It brings the old internet to the modern world, also we IP ban stupid people so you won't see any STUPID pricks here :troll:<br><br></center></td></tr></tbody></table>  </p></center></td></tr></tbody>
 </table>
 
   </td></tr></tbody></table>
