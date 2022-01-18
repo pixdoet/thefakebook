@@ -2,7 +2,7 @@
 
 <head>
   <title>Thefuckbook | Welcome to Thefuckbook!</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <link rel="shortcut icon" href="favicon.ico">
 
 </head>

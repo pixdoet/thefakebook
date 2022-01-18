@@ -2,8 +2,8 @@
 
 <head>
   <title>Thefakebook | Welcome to Thefakebook!</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="/favicon.ico">
 
 </head>
 
