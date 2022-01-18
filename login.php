@@ -145,7 +145,7 @@ if (isset($_POST['submit'])) {
         </tr>
       </tbody>
     </table><br>
-    <?php echo $login_status; ?>
+    <?php // echo $login_status; // finally removed :sigh:?>
 
   </center>
 </body>

@@ -29,7 +29,7 @@ session_start();
                       <tbody>
                         <tr>
                           <td>
-                            <?php include("sidebar.php");?>
+                            <?php include("sidebar.php"); ?>
                           </td>
                         </tr>
 
