@@ -7,23 +7,6 @@ session_start()
   <title>Thefacebook | Contact Us</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
-
-  <!-- BEGIN WAYBACK TOOLBAR INSERT -->
-  <style type="text/css">
-    body {
-      margin-top: 0 !important;
-      padding-top: 0 !important;
-      /*min-width:800px !important;*/
-    }
-  </style>
-  <script>
-    __wm.rw(0);
-  </script>
-</head>
-
-<body>
-
-  <!-- END WAYBACK TOOLBAR INSERT -->
   <center>
     <table class="bordertable" width="700" cellspacing="0" cellpadding="0" border="0">
       <tbody>
@@ -130,9 +113,8 @@ session_start()
                                                           <td></td>
                                                         </tr>
                                                         <tr>
-                                                          <td>Join our <a href="https://discord.gg/HYfBdYBbwH">Discord</a>.</td>
+                                                          <td>Join our <a href="https://discord.gg/dRPffgrXzx">Discord</a>.</td>
                                                         </tr>
-                                                        <form method="post" action="contact.php"></form>
                                                       </tbody>
                                                     </table>
                                                     <p>
@@ -176,7 +158,7 @@ session_start()
                                                   </td>
                                                 </tr>
                                               </tbody>
-                                            </table>&nbsp;<br><input class="inputsubmit" type="button" value="Home" onclick="javascript:document.location=&quot;home.php&quot;;"><br>&nbsp;
+                                            </table>&nbsp;<br><input class="inputsubmit" type="button" value="Home" onclick="javascript:document.location='home.php'"><br>&nbsp;
                                           </center>
                                         </center>
                                       </td>
@@ -209,6 +191,6 @@ session_start()
       </tbody>
     </table><br>
   </center>
-</body>
+  </body>
 
 </html>

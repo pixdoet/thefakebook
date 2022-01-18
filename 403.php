@@ -25,7 +25,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <?php include("sidebar.php");?>
+                            <?php include("sidebar.php"); ?>
                           </td>
                         </tr>
 
@@ -51,7 +51,7 @@
                               <table width="95%" cellspacing="0" cellpadding="0" border="0">
                                 <tbody>
                                   <tr>
-                                    <td class="larger">The page you have requested for is forbidden for you.<br><br>If you believe you can view this page, <a class="larger-a" href="https://discord.gg/ydCZg3QAJ2">Join our Discord</a> and let us know.<br><br>
+                                    <td class="larger">The page you have requested for is forbidden for you.<br><br>If you believe you can view this page, <a class="larger-a" href="https://discord.gg/dRPffgrXzx">Join our Discord</a> and let us know.<br><br>
                                       <center><a href="/index.php" class="larger-a">Take me home, to the place, I belong, West Virginia</a></center>
                                     </td>
                                   </tr>

@@ -13,7 +13,7 @@
       <tbody>
         <tr>
           <td>
-            <?php include("header.php");?>
+            <?php include("header.php"); ?>
           </td>
         </tr>
         <tr>
@@ -26,7 +26,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <?php include("sidebar.php");?>
+                            <?php include("sidebar.php"); ?>
                           </td>
                         </tr>
 
@@ -52,7 +52,7 @@
                               <table width="95%" cellspacing="0" cellpadding="0" border="0">
                                 <tbody>
                                   <tr>
-                                    <td class="larger">The page that you are looking for has either been moved or deleted. <strong>If this was an account page, it most likely was terminated for violation in accordance to our Terms of Service or was requested to be removed from the account owner.</strong><br><br>If you believe that there should be a page here, <a class="larger-a" href="https://discord.gg/ydCZg3QAJ2">Join our Discord</a> and let us know.<br><br>
+                                    <td class="larger">The page that you are looking for has either been moved or deleted. <strong>If this was an account page, it most likely was terminated for violation in accordance to our Terms of Service or was requested to be removed from the account owner.</strong><br><br>If you believe that there should be a page here, <a class="larger-a" href="https://discord.gg/dRPffgrXzx">Join our Discord</a> and let us know.<br><br>
                                       <center><a href="/index.php" class="larger-a">Take me home, to the place, I belong, West Virginia</a></center>
                                     </td>
                                   </tr>
